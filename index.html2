@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChoreBot - The Ultimate Household Robot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #007bff;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        input[type="file"], button {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ChoreBot</h1>
+        <p>Your Smart Robot for Household Chores</p>
+    </header>
+
+    <section id="description">
+        <h2>About ChoreBot</h2>
+        <p>ChoreBot is an innovative robot designed to make your life easier by handling everyday household chores. Invented by [Your Little Brother's Name], this robot can wash dishes, mop floors, and vacuum your home efficiently.</p>
+        <p>Perfect for busy families, ChoreBot uses advanced technology to navigate your home and perform tasks with precision.</p>
+    </section>
+
+    <section id="features">
+        <h2>Features</h2>
+        <ul>
+            <li><strong>Dish Washing:</strong> Automatically loads and cleans dishes in your dishwasher.</li>
+            <li><strong>Mopping:</strong> Detects and cleans spills and dirt on floors.</li>
+            <li><strong>Vacuuming:</strong> Picks up dust, crumbs, and pet hair from carpets and hard floors.</li>
+            <li><strong>Phone Connectivity:</strong> Control ChoreBot from your phone via this web app. Upload custom code to program behaviors and pictures of your home for better navigation.</li>
+        </ul>
+    </section>
+
+    <section id="control">
+        <h2>Control Panel (Phone-Friendly)</h2>
+        <p>Use your phone to connect to ChoreBot. Upload code for custom tasks or pictures of your dishwasher, vacuum, and house layout to make operations more precise.</p>
+        
+        <form id="upload-form">
+            <label for="code-upload">Upload Custom Code:</label>
+            <input type="file" id="code-upload" accept=".py,.js,.txt">
+            
+            <label for="dishwasher-pic">Upload Dishwasher Picture:</label>
+            <input type="file" id="dishwasher-pic" accept="image/*">
+            
+            <label for="vacuum-pic">Upload Vacuum Picture:</label>
+            <input type="file" id="vacuum-pic" accept="image/*">
+            
+            <label for="house-pic">Upload House Layout Picture:</label>
+            <input type="file" id="house-pic" accept="image/*">
+            
+            <button type="button" onclick="alert('Files uploaded successfully! (This is a demo)')">Upload and Connect</button>
+        </form>
+    </section>
+
+    <section id="how-it-works">
+        <h2>How It Works</h2>
+        <p>1. Connect your phone to the robot via Bluetooth or Wi-Fi.</p>
+        <p>2. Use the upload form above to send custom code that tells ChoreBot what to do.</p>
+        <p>3. Upload photos of your dishwasher, vacuum, and home to help the robot recognize and navigate precisely.</p>
+        <p>ChoreBot processes the images using AI to map your space and optimize chore paths.</p>
+    </section>
+
+    <footer>
+        <p>Created for the Invention Fair &copy; 2025</p>
+    </footer>
+
+    <script>
+        // Simple script to handle form submission (demo only)
+        document.getElementById('upload-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Upload simulated! In a real app, this would send data to the robot.');
+        });
+    </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChoreBot - The Ultimate Household Robot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #007bff;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        input[type="file"], button {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ChoreBot</h1>
+        <p>Your Smart Robot for Household Chores</p>
+    </header>
+
+    <section id="description">
+        <h2>About ChoreBot</h2>
+        <p>ChoreBot is an innovative robot designed to make your life easier by handling everyday household chores. Invented by [Your Little Brother's Name], this robot can wash dishes, mop floors, and vacuum your home efficiently.</p>
+        <p>Perfect for busy families, ChoreBot uses advanced technology to navigate your home and perform tasks with precision.</p>
+    </section>
+
+    <section id="features">
+        <h2>Features</h2>
+        <ul>
+            <li><strong>Dish Washing:</strong> Automatically loads and cleans dishes in your dishwasher.</li>
+            <li><strong>Mopping:</strong> Detects and cleans spills and dirt on floors.</li>
+            <li><strong>Vacuuming:</strong> Picks up dust, crumbs, and pet hair from carpets and hard floors.</li>
+            <li><strong>Phone Connectivity:</strong> Control ChoreBot from your phone via this web app. Upload custom code to program behaviors and pictures of your home for better navigation.</li>
+        </ul>
+    </section>
+
+    <section id="control">
+        <h2>Control Panel (Phone-Friendly)</h2>
+        <p>Use your phone to connect to ChoreBot. Upload code for custom tasks or pictures of your dishwasher, vacuum, and house layout to make operations more precise.</p>
+        
+        <form id="upload-form">
+            <label for="code-upload">Upload Custom Code:</label>
+            <input type="file" id="code-upload" accept=".py,.js,.txt">
+            
+            <label for="dishwasher-pic">Upload Dishwasher Picture:</label>
+            <input type="file" id="dishwasher-pic" accept="image/*">
+            
+            <label for="vacuum-pic">Upload Vacuum Picture:</label>
+            <input type="file" id="vacuum-pic" accept="image/*">
+            
+            <label for="house-pic">Upload House Layout Picture:</label>
+            <input type="file" id="house-pic" accept="image/*">
+            
+            <button type="button" onclick="alert('Files uploaded successfully! (This is a demo)')">Upload and Connect</button>
+        </form>
+    </section>
+
+    <section id="how-it-works">
+        <h2>How It Works</h2>
+        <p>1. Connect your phone to the robot via Bluetooth or Wi-Fi.</p>
+        <p>2. Use the upload form above to send custom code that tells ChoreBot what to do.</p>
+        <p>3. Upload photos of your dishwasher, vacuum, and home to help the robot recognize and navigate precisely.</p>
+        <p>ChoreBot processes the images using AI to map your space and optimize chore paths.</p>
+    </section>
+
+    <footer>
+        <p>Created for the Invention Fair &copy; 2025</p>
+    </footer>
+
+    <script>
+        // Simple script to handle form submission (demo only)
+        document.getElementById('upload-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Upload simulated! In a real app, this would send data to the robot.');
+        });
+    </script>
+</body>
+</html>
